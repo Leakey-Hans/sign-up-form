@@ -111,6 +111,13 @@ img {
 .form-input input {
     height: 3.5vh;
     border: 1px solid rgb(220, 220, 220);
+    border-radius: 6px;
+}
+
+.form-input input:focus{
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .form-input label{
@@ -146,6 +153,11 @@ img {
 .btn-div > p a{
     color: #308726;
     font-weight: 900;
+}
+
+#pass-confirm:user-invalid,
+#password:user-invalid{
+    border: 1px solid red;
 }
 
 
