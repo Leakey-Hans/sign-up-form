@@ -3,3 +3,57 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* self hosted Font */
+@font-face {
+    font-family: Norsebold;
+    src: url(./assets/Font/norse/Norsebold.otf);
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+}
+
+.left-side{
+    min-height: 100vh;
+    flex-basis: 550px;
+    background-image: url(./assets/matthew-brodeur-DH_u2aV3nGM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.left-side-content {
+    min-height: 20vh;
+    background-color: rgb(0, 0, 0);
+    opacity: 60%;
+    margin-top: 60%;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+img {
+    height: 150px;
+    margin-left: 20%;
+}
+
+.text-content {
+    color: white;
+    font-family: Norsebold;
+    font-size: 6rem;
+    align-self: center;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 15px;
+    left: 30%;
+    color: white;
+}
+
+.attribution p > a{
+    color: white;
+}
