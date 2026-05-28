@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 
-/* self hosted Font */
+/* self hosted Fonts */
 @font-face {
-    font-family: Norsebold;
+    font-family: 'NorseBold';
     src: url(./assets/Font/norse/Norsebold.otf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./assets/Font/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
 }
 
 .main-container {
@@ -29,7 +34,7 @@
     min-height: 20vh;
     background-color: rgb(0, 0, 0);
     opacity: 60%;
-    margin-top: 60%;
+    margin-top: 29%;
     padding: 30px;
     display: flex;
     gap: 20px;
@@ -42,7 +47,7 @@ img {
 
 .text-content {
     color: white;
-    font-family: Norsebold;
+    font-family: 'NorseBold';
     font-size: 6rem;
     align-self: center;
 }
@@ -50,10 +55,98 @@ img {
 .attribution {
     position: absolute;
     bottom: 15px;
-    left: 30%;
+    left: 25%;
     color: white;
 }
 
 .attribution p > a{
     color: white;
 }
+
+.right-side {
+    background-color: rgb(241, 241, 241);
+    min-height: 100vh;
+    flex-basis: calc(100% - 550px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    font-family: 'Roboto';
+    position: relative;
+}
+
+.right-top {
+    line-height: 28px;
+    position: absolute;
+    top: 15%;
+    padding: 40px 60px;
+}
+
+.right-centre{
+    display: flex;
+    gap: 30px;
+    background-color: white;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 60px;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 40px;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 250px;
+}
+
+.form-input input {
+    height: 3.5vh;
+    border: 1px solid rgb(220, 220, 220);
+}
+
+.form-input label{
+    font-size: 0.8rem;
+    color: rgb(74, 74, 74);
+}
+
+.btn-div{
+    position: absolute;
+    bottom: 25%;
+    left: 60px;
+}
+
+.btn-div button {
+    padding: 10px 40px;
+    background-color: #308726;
+    border-radius: 10px;
+    border: 2px solid #308726;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.btn-div button:hover{
+    border: 2px solid #dddddd;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.btn-div > p {
+    margin-top: 10px;
+    
+}
+
+.btn-div > p a{
+    color: #308726;
+    font-weight: 900;
+}
+
+
+
