@@ -160,5 +160,10 @@ img {
     border: 1px solid red;
 }
 
+#pass-confirm:user-valid,
+#password:user-valid{
+    border: 1px solid #308726;
+}
+
 
 
